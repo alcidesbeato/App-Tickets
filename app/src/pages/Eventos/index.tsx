@@ -4,17 +4,17 @@ import { Text } from 'react-native';
 
 import { Container } from './styles';
 
-interface FollowingProps {
+interface EventosProps {
   children: ReactNode;
 }
 
-function Following({ children }: FollowingProps) {
+function Eventos({ children }: EventosProps) {
   return (
     <Container>
-      <Text>Following</Text>
+      <Text>Eventos</Text>
       {children}
     </Container>
   );
 };
 
-export default Following;
+export default Eventos;

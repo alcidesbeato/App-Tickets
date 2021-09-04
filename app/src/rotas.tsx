@@ -3,21 +3,25 @@ import { View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import Following from './pages/Following';
-import ComingSoon from './pages/ComingSoon';
+import Inicio from './pages/Inicio';
+import Eventos from './pages/Eventos';
+import Ingressos from './pages/Ingressos';
+import Cadastro from './pages/Cadastro';
 
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
-const Routes: React.FC = () => (
-  <NavigationContainer>
-    <Navigator>
-      <Screen name="Following" component={Following} />
-      <Screen name="Discover" component={ComingSoon} />
-      <Screen name="Browse" component={View} />
-      <Screen name="Esports" component={View} />
-    </Navigator>
-  </NavigationContainer>
-);
+const Routes: React.FC = () => {
+  return (
+    <NavigationContainer>
+      <Navigator>
+        <Screen name="Incio" component={Inicio} /> 
+        <Screen name="Ingressos" component={Ingressos} />
+        <Screen name="Eventos" component={Eventos} />
+        <Screen name="Cadastro" component={Cadastro} />
+      </Navigator>
+    </NavigationContainer>
+  );
+};
 
 export default Routes;

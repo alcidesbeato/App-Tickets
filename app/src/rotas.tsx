@@ -19,15 +19,15 @@ const Routes: React.FC = () => {
       <Navigator>
 
         <Screen 
-        name="Inicio" 
+        name="Início" 
         component={Inicio} 
         options={{
           tabBarIcon: ({size,focused}) => {
             return(
-              <Ionicons
-                name="md-heart"
+              <MaterialCommunityIcons
+                name= "home"
                 size={size}
-                color={focused ? colors.purple : colors.black}
+                color={focused ? colors.red : colors.black}
               /> 
                   );
                                            },
@@ -41,9 +41,9 @@ const Routes: React.FC = () => {
           tabBarIcon: ({size,focused}) => {
             return(
               <MaterialCommunityIcons
-                name="compass-outline"
+                name= "ticket"
                 size={size}
-                color={focused ? colors.purple : colors.black}
+                color={focused ? colors.red : colors.black}
               /> 
                   );
                                            },
@@ -56,10 +56,10 @@ const Routes: React.FC = () => {
         options={{
           tabBarIcon: ({size,focused}) => {
             return(
-              <Ionicons
-                name="md-browsers"
+              <MaterialCommunityIcons
+                name= "location-enter"
                 size={size}
-                color={focused ? colors.purple : colors.black}
+                color={focused ? colors.red : colors.black}
               /> 
                   );
                                            },
@@ -72,10 +72,10 @@ const Routes: React.FC = () => {
         options={{
           tabBarIcon: ({size,focused}) => {
             return(
-              <MaterialCommunityIcons
-                name="trophy-outline"
+              <Ionicons
+                name= "person"
                 size={size}
-                color={focused ? colors.purple : colors.black}
+                color={focused ? colors.red : colors.black}
               /> 
                   );
                                            },

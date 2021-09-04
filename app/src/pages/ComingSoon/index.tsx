@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+/*import { ReactNode } from 'react';
 
 import { Text } from 'react-native';
 
@@ -20,3 +20,4 @@ function ComingSoon({ children }: ComingSoonProps) {
 };
 
 export default ComingSoon;
+*/

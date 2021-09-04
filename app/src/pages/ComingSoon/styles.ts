@@ -5,7 +5,7 @@ import { Platform } from 'react-native';
 
 const statusBarHeight =
   Platform.OS === 'android' ? Constants.statusBarHeight : 0;
-
+/*
 export const Wrapper = styled.SafeAreaView`
   background: blue;
   flex: 1;
@@ -19,4 +19,4 @@ export const Heading = styled.Text`
   color: blue;
   font-family: roboto_500;
   font-size: 30px;
-`;
+`;*/

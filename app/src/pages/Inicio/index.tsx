@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, FlatList } from 'react-native';
 
-import Header from '../../components/Header';
+import Topo from '../../components/Topo';
 import Heading from '../../components/Heading';
 import Title from '../../components/Title';
 import CategoryList from '../../components/CategoryList';
@@ -59,7 +59,7 @@ const Inicio: React.FC = () => {
   return (
     <Wrapper>
       <Container>
-        <Header />
+        <Topo />
 
         <Main>
           <FlatList<Item>

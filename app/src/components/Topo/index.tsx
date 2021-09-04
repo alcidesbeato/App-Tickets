@@ -9,7 +9,7 @@ import colors from '../../styles/colors';
 
 import { Container, Avatar, OnlineStatus, RightSide, Button } from './styles';
 
-const Header: React.FC = () => {
+const Topo: React.FC = () => {
   return (
     <Container>
       <Avatar>
@@ -34,11 +34,15 @@ const Header: React.FC = () => {
         </Button>
 
         <Button>
-          <Feather name="search" size={26} color={colors.black} />
+          <Feather 
+          name="search" 
+          size={26} 
+          color={colors.black} />
         </Button>
+        
       </RightSide>
     </Container>
   );
 };
 
-export default Header;
+export default Topo;

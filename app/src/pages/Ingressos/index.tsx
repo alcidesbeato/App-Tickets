@@ -20,34 +20,13 @@ const Ingressos: React.FC = () => {
   const { data, indices } = React.useMemo(() => {
     const items: Item[] = [
       {
-        key: 'PAGE_HEADING',
-        render: () => <Cabeçalho>Eventos</Cabeçalho>,
+        key: 'Cabeçalho',
+        render: () => <Cabeçalho>Ingressos</Cabeçalho>,
       },
 
       {
-        key: 'FOLLOWED_CATEGORIES',
-        render: () => <Titulo>Categorias</Titulo>,
-        isTitle: true,
-      },
-      { key: 'C1', render: () => <Categorias /> },
-
-      {
-        key: 'LIVE_CHANNELS',
-        render: () => <Titulo> Acontecendo hoje </Titulo>,
-        isTitle: true,
-      },
-      { key: 'C2', render: () => <AcontecendoHoje /> },
-
-      {
-        key: 'CONTINUE_WATCHING',
-        render: () => <View />,
-        isTitle: true,
-      },
-      { key: 'C3', render: () => <View /> },
-
-      {
-        key: 'OFFLINE_CHANNELS',
-        render: () => <Titulo>Offline Channels</Titulo>,
+        key: 'Ingressos',
+        render: () => <Titulo>Meus Ingressos</Titulo>,
         isTitle: true,
       },
       { key: 'C4', render: () => <MeusIngressos /> },

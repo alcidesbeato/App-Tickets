@@ -1,10 +1,19 @@
 import React from "react";
-import { Wrapper, Heading } from './styles';
+import { Text } from "react-native";
+import { Wrapper, Container, Main } from './styles';
 
 const Inicio: React.FC = () => {
     return (
         <Wrapper>
-            <Heading> Inicio </Heading>
+
+            <Container>
+                <Text style={{color :'white'}}> Inicio </Text>
+                
+                <Main/>
+
+                
+                
+            </Container>
         </Wrapper>
     );
     

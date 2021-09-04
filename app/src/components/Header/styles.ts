@@ -9,6 +9,7 @@ export const Container = styled.View`
   justify-content: space-between;
 `;
 
+
 export const OnlineStatus = styled.View`
   background: ${colors.green};
   width: 10px;

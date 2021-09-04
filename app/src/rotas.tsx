@@ -7,6 +7,9 @@ import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
 import colors from './styles/colors';
 
 import Inicio from './pages/Inicio';
+import Ingressos from './pages/Ingressos';
+import Eventos from './pages/Eventos';
+import Cadastro from './pages/Cadastro';
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
@@ -33,7 +36,7 @@ const Routes: React.FC = () => {
 
         <Screen 
         name="Ingressos" 
-        component={View} 
+        component={Ingressos} 
         options={{
           tabBarIcon: ({size,focused}) => {
             return(
@@ -49,7 +52,7 @@ const Routes: React.FC = () => {
 
         <Screen 
         name="Eventos" 
-        component={View} 
+        component={Eventos} 
         options={{
           tabBarIcon: ({size,focused}) => {
             return(
@@ -65,7 +68,7 @@ const Routes: React.FC = () => {
 
         <Screen 
         name="Cadastro" 
-        component={View}
+        component={Cadastro}
         options={{
           tabBarIcon: ({size,focused}) => {
             return(

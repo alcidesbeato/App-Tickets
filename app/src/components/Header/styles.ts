@@ -20,6 +20,7 @@ export const OnlineStatus = styled.View`
   bottom: 0;
 `;
 
+
 export const Avatar = styled.TouchableOpacity`
   background: ${colors.red};
   width: 32px;

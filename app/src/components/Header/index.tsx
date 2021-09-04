@@ -13,7 +13,7 @@ const Header: React.FC = () => {
   return (
     <Container>
       <Avatar>
-        <OnlineStatus />
+         <OnlineStatus /> 
       </Avatar>
 
       <RightSide>

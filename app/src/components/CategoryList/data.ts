@@ -1,9 +1,10 @@
-import a from "*.png";
-import b from "*.png";
-import c from "*.png";
-import d from "*.png";
-import e from "*.png";
-import f from "*.jpeg";
+import a from '../../images/a.png';
+import b from '../../images/b.jpeg';
+import c from '../../images/c.png';
+import d from '../../images/d.jpg';
+import e from '../../images/e.jpg';
+import f from '../../images/f.jpg';
+
 
 
 export default [

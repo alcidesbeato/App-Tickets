@@ -2,16 +2,13 @@ import a from '../../images/a.png';
 import b from '../../images/b.jpeg';
 import c from '../../images/c.png';
 import d from '../../images/d.jpg';
-import e from '../../images/e.jpg';
-import f from '../../images/f.jpg';
-
+import arlivre from '../../images/arlivre.jpg';
 
 
 export default [
-  { name: '1', source: a },
-  { name: '2', source: b },
-  { name: '3', source: c },
-  { name: '4', source: d },
-  { name: '5', source: e },
-  { name: '6', source: f },
+  { name: 'ola', source: a },
+  { name: 'Musica', source: b },
+  { name: 'Aprender', source: c },
+  { name: 'Festa', source: d },
+  { name: 'Ar livre', source: arlivre },
 ];

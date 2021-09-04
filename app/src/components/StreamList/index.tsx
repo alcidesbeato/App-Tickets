@@ -27,15 +27,15 @@ const StreamList: React.FC = () => {
         <StreamColumn>
           <StreamHeader>
             <StreamAvatar />
-            <StreamUsername numberOfLines={1}>rodz_oficial</StreamUsername>
+            <StreamUsername numberOfLines={1}>Live Mb Labs</StreamUsername>
           </StreamHeader>
 
           <StreamDescription numberOfLines={1}>
-            Front-end com Next.js, Chakra UI e GraphQL
+            Desenvolver app frontend
           </StreamDescription>
 
           <StreamCategory numberOfLines={1}>
-            Science e Technology
+            Tecnologia
           </StreamCategory>
         </StreamColumn>
 

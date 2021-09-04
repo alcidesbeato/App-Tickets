@@ -10,6 +10,7 @@ export default [
   { name: '1', source: a },
   { name: '2', source: b },
   { name: '3', source: c },
+  { name: '4', source: d },
   { name: '5', source: e },
   { name: '6', source: f },
 ];

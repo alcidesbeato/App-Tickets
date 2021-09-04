@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\Alcides Beato\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add AppLoading
+  C:\Program Files\nodejs\node.exe C:\Users\Alcides Beato\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add expo-constant
 
 PATH: 
   C:\Python39\Scripts\;C:\Python39\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Java\jdk-15.0.1\bin;D:\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\OpenJDK\openjdk-11.0.12_7\bin;C:\Program Files\nodejs\;C:\Android\Sdk\emulator;C:\Android\Sdk\tools;C:\Android\Sdk\tools\bin;C:\Android\Sdk\platform-tools;C:\Users\Alcides Beato\AppData\Local\Microsoft\WindowsApps;C:\Users\Alcides Beato\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Alcides Beato\AppData\Local\GitHubDesktop\bin;C:\Users\Alcides Beato\.dotnet\tools;C:\Users\Alcides Beato\AppData\Roaming\npm
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/AppLoading: Not found
+  Error: https://registry.yarnpkg.com/expo-constant: Not found
       at Request.params.callback [as _callback] (C:\Users\Alcides Beato\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66992:18)
       at Request.self.callback (C:\Users\Alcides Beato\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140763:22)
       at Request.emit (events.js:400:28)
@@ -42,9 +42,6 @@ npm manifest:
       "@react-native-community/masked-view": "0.1.10",
       "@react-navigation/bottom-tabs": "^6.0.5",
       "@react-navigation/native": "^6.0.2",
-      "@types/react": "^17.0.19",
-      "@types/react-native": "^0.64.13",
-      "@types/styled-components": "^5.1.13",
       "expo": "~42.0.1",
       "expo-app-loading": "^1.1.2",
       "expo-status-bar": "~1.0.4",
@@ -54,13 +51,16 @@ npm manifest:
       "react-native-gesture-handler": "^1.10.3",
       "react-native-reanimated": "^2.2.0",
       "react-native-safe-area-context": "3.2.0",
+      "react-native-safe-area-view": "^1.1.1",
       "react-native-screens": "~3.4.0",
+      "react-native-status-bar-height": "^2.6.0",
       "react-native-web": "~0.13.12",
-      "styled-components": "^5.3.1",
-      "typescript": "^4.4.2"
+      "styled-components": "^5.3.1"
     },
     "devDependencies": {
-      "@babel/core": "^7.9.0"
+      "@babel/core": "^7.9.0",
+      "@types/react": "^17.0.19",
+      "@types/react-native": "^0.64.13"
     },
     "private": true
   }
@@ -1723,14 +1723,6 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/@types/hammerjs/-/hammerjs-2.0.40.tgz#ded0240b6ea1ad7afc1e60374c49087aaea5dbd8"
     integrity sha512-VbjwR1fhsn2h2KXAY4oy1fm7dCxaKy0D+deTb8Ilc3Eo3rc5+5eA4rfYmZaHgNJKxVyI0f6WIXzO2zLkVmQPHA==
   
-  "@types/hoist-non-react-statics@*":
-    version "3.3.1"
-    resolved "https://registry.yarnpkg.com/@types/hoist-non-react-statics/-/hoist-non-react-statics-3.3.1.tgz#1124aafe5118cb591977aeb1ceaaed1070eb039f"
-    integrity sha512-iMIqiko6ooLrTh1joXodJK5X9xeEALT1kM5G3ZLhD3hszxBdIEd5C75U834D9mLcINgD4OyZf5uQXjkuYydWvA==
-    dependencies:
-      "@types/react" "*"
-      hoist-non-react-statics "^3.3.0"
-  
   "@types/istanbul-lib-coverage@*", "@types/istanbul-lib-coverage@^2.0.0":
     version "2.0.3"
     resolved "https://registry.yarnpkg.com/@types/istanbul-lib-coverage/-/istanbul-lib-coverage-2.0.3.tgz#4ba8ddb720221f432e443bd5f9117fd22cfd4762"
@@ -1793,15 +1785,6 @@ Lockfile:
     version "1.0.1"
     resolved "https://registry.yarnpkg.com/@types/stack-utils/-/stack-utils-1.0.1.tgz#0a851d3bd96498fa25c33ab7278ed3bd65f06c3e"
     integrity sha512-l42BggppR6zLmpfU6fq9HEa2oGPEI8yrSPL3GITjfRInppYFahObbIQOQK3UGxEnyQpltZLaPe75046NOZQikw==
-  
-  "@types/styled-components@^5.1.13":
-    version "5.1.13"
-    resolved "https://registry.yarnpkg.com/@types/styled-components/-/styled-components-5.1.13.tgz#a2906b68c2c6c811996216983b74ca02e22c6c34"
-    integrity sha512-nIIsiQ+Ag/4xnYf9mhzO3zIZ/zOmKN6HImEZifKh2TLibYz8OudzJbvzDu1uvMfX/+bs0B0RDPB2OIcbrrptVQ==
-    dependencies:
-      "@types/hoist-non-react-statics" "*"
-      "@types/react" "*"
-      csstype "^3.0.2"
   
   "@types/yargs-parser@*":
     version "20.2.1"
@@ -3539,6 +3522,11 @@ Lockfile:
     dependencies:
       source-map "^0.7.3"
   
+  hoist-non-react-statics@^2.3.1:
+    version "2.5.5"
+    resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-2.5.5.tgz#c5903cf409c0dfd908f388e619d86b9c1174cb47"
+    integrity sha512-rqcy4pJo55FTTLWt+bU8ukscqHeE/e9KWvsOW2b/a3afxQZhwkQdT1rPPCJ0rYXdj4vNcasY8zHTH+jF/qStxw==
+  
   hoist-non-react-statics@^3.0.0, hoist-non-react-statics@^3.3.0:
     version "3.3.2"
     resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
@@ -5130,12 +5118,24 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/react-native-safe-area-context/-/react-native-safe-area-context-3.2.0.tgz#06113c6b208f982d68ab5c3cebd199ca93db6941"
     integrity sha512-k2Nty4PwSnrg9HwrYeeE+EYqViYJoOFwEy9LxL5RIRfoqxAq/uQXNGwpUg2/u4gnKpBbEPa9eRh15KKMe/VHkA==
   
+  react-native-safe-area-view@^1.1.1:
+    version "1.1.1"
+    resolved "https://registry.yarnpkg.com/react-native-safe-area-view/-/react-native-safe-area-view-1.1.1.tgz#9833e34c384d0513f4831afcd1e54946f13897b2"
+    integrity sha512-bbLCtF+tqECyPWlgkWbIwx4vDPb0GEufx/ZGcSS4UljMcrpwluachDXoW9DBxhbMCc6k1V0ccqHWN7ntbRdERQ==
+    dependencies:
+      hoist-non-react-statics "^2.3.1"
+  
   react-native-screens@~3.4.0:
     version "3.4.0"
     resolved "https://registry.yarnpkg.com/react-native-screens/-/react-native-screens-3.4.0.tgz#91deeac7630db9f3984053e2ab146d71bba7af4e"
     integrity sha512-cg+q9MRnVdeOcJyvJtqffoXLur/C2wHA/7IO2+FAipzTlgHbbM1mTuSM7qG+SeiQjoIs4mHOEf7A0ziPKW04sA==
     dependencies:
       warn-once "^0.1.0"
+  
+  react-native-status-bar-height@^2.6.0:
+    version "2.6.0"
+    resolved "https://registry.yarnpkg.com/react-native-status-bar-height/-/react-native-status-bar-height-2.6.0.tgz#b6afd25b6e3d533c43d0fcdcfd5cafd775592cea"
+    integrity sha512-z3SGLF0mHT+OlJDq7B7h/jXPjWcdBT3V14Le5L2PjntjjWM3+EJzq2BcXDwV+v67KFNJic5pgA26cCmseYek6w==
   
   react-native-web@~0.13.12:
     version "0.13.18"
@@ -5987,11 +5987,6 @@ Lockfile:
     version "0.0.6"
     resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
     integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
-  
-  typescript@^4.4.2:
-    version "4.4.2"
-    resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.4.2.tgz#6d618640d430e3569a1dfb44f7d7e600ced3ee86"
-    integrity sha512-gzP+t5W4hdy4c+68bfcv0t400HVJMMd2+H9B7gae1nQlBzCqvrXX+6GL/b3GAgyTH966pzrZ70/fRjwAtZksSQ==
   
   ua-parser-js@^0.7.18:
     version "0.7.28"

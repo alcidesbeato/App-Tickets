@@ -35,7 +35,7 @@ const StreamList: React.FC = () => {
           </StreamDescription>
 
           <StreamCategory numberOfLines={1}>
-            Science & Technology
+            Science e Technology
           </StreamCategory>
         </StreamColumn>
 

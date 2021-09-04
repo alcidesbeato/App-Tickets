@@ -16,7 +16,7 @@ interface Item {
   isTitle?: boolean;
 }
 
-const Following: React.FC = () => {
+const Inicio: React.FC = () => {
   const { data, indices } = React.useMemo(() => {
     const items: Item[] = [
       {

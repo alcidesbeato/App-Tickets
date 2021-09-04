@@ -15,6 +15,3 @@ export const Heading = styled.Text`
     font-family: roboto_500;
     font-size: 30px;
 `;
-
-
-

@@ -4,17 +4,17 @@ import { Text } from 'react-native';
 
 import { Container } from './styles';
 
-interface InicioProps {
+interface EventosProps {
   children: ReactNode;
 }
 
-function Inicio({ children }: InicioProps) {
+const Routes: React.FC = ({ children }) => {  
   return (
     <Container>
-      <Text> Inicio </Text>
+      <Text>Eventos</Text>
       {children}
     </Container>
   );
 };
 
-export default Inicio;
+export default <Inicio></Inicio>;

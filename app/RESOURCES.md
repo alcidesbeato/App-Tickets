@@ -1,9 +1,9 @@
-import 1 from 'C:\Users\Alcides Beato\Documents\GitHub\DesafioMb\app\src\images/1';
-import 2 from 'C:\Users\Alcides Beato\Documents\GitHub\DesafioMb\app\src\images/2';
-import 3 from 'C:\Users\Alcides Beato\Documents\GitHub\DesafioMb\app\src\images/3';
-import 4 from 'C:\Users\Alcides Beato\Documents\GitHub\DesafioMb\app\src\images/4';
-import 5 from 'C:\Users\Alcides Beato\Documents\GitHub\DesafioMb\app\src\images/5';
-import 6 from 'C:\Users\Alcides Beato\Documents\GitHub\DesafioMb\app\src\images/6';
+import 1 from '.src\images/1';
+import 2 from '.src\images/2';
+import 3 from '.src\images/3';
+import 4 from '.src\images/4';
+import 5 from '.src\images/5';
+import 6 from '.src\images/6';
 
 export default [
   { name: '1', source: 1 },

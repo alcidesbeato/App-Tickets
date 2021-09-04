@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 
 import { Text } from 'react-native';
 
-import { Container } from './styles';
+import { Wrapper, Heading } from './styles';
 
 interface ComingSoonProps {
   children: ReactNode;
@@ -10,12 +10,12 @@ interface ComingSoonProps {
 
 function ComingSoon({ children }: ComingSoonProps) {
   return (
-    <Container>
+    <Wrapper>
 
       <Text> Coming soon </Text>
 
       {children}
-    </Container>
+    </Wrapper>
   );
 };
 

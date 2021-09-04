@@ -1,20 +1,14 @@
-import { ReactNode } from 'react';
-
+import React from "react";
 import { Text } from 'react-native';
+import { Wrapper, Heading } from './styles';
 
-import { Container } from './styles';
-
-interface EventosProps {
-  children: ReactNode;
-}
-
-const Routes: React.FC = ({ children }) => {  
-  return (
-    <Container>
-      <Text>Eventos</Text>
-      {children}
-    </Container>
-  );
+const Inicio: React.FC = () => {
+    return (
+        <Wrapper>
+            <Heading> Inicio </Heading>
+        </Wrapper>
+    );
+    
 };
 
-export default <Inicio></Inicio>;
+export default Inicio;

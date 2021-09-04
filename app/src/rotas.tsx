@@ -2,8 +2,8 @@ import React from 'react';
 import { View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-
 import Inicio from './pages/Inicio';
+
 
 const { Navigator, Screen } = createBottomTabNavigator();
 

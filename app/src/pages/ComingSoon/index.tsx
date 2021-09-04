@@ -1,8 +1,8 @@
-/*import { ReactNode } from 'react';
+import { ReactNode } from 'react';
 
 import { Text } from 'react-native';
 
-import { Wrapper, Heading } from './styles';
+import { Container } from './styles';
 
 interface ComingSoonProps {
   children: ReactNode;
@@ -10,14 +10,13 @@ interface ComingSoonProps {
 
 function ComingSoon({ children }: ComingSoonProps) {
   return (
-    <Wrapper>
+    <Container>
 
-      <Heading> Coming soon </Heading>
+      <Text> Coming soon </Text>
 
       {children}
-    </Wrapper>
+    </Container>
   );
 };
 
 export default ComingSoon;
-*/

@@ -1,7 +1,7 @@
 import React from "react";
 import { Wrapper, Heading } from './styles';
 
-const Inicio: React.FC = () => {
+const Eventos: React.FC = () => {
     return (
         <Wrapper>
             <Heading> Eventos </Heading>
@@ -10,4 +10,4 @@ const Inicio: React.FC = () => {
     
 };
 
-export default Inicio;
+export default Eventos;

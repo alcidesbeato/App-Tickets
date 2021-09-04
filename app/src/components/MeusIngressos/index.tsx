@@ -12,7 +12,7 @@ import {
   WhiteCircle,
 } from './styles';
 
-const ChannelList: React.FC = () => {
+const MeusIngressos: React.FC = () => {
   const ChannelItem = () => (
     <ChannelContainer>
       <LeftSide>
@@ -45,4 +45,4 @@ const ChannelList: React.FC = () => {
   );
 };
 
-export default ChannelList;
+export default MeusIngressos;

@@ -2,11 +2,11 @@ import React from 'react';
 import { View, FlatList } from 'react-native';
 
 import Topo from '../../components/Topo';
-import Heading from '../../components/Heading';
-import Title from '../../components/Title';
-import CategoryList from '../../components/CategoryList';
-import StreamList from '../../components/StreamList';
-import ChannelList from '../../components/ChannelList';
+import Cabeçalho from '../../components/Cabeçalho';
+import Titulo from '../../components/Titulo';
+import Categorias from '../../components/Categorias';
+import AcontecendoHoje from '../../components/AcontecendoHoje';
+import MeusIngressos from '../../components/MeusIngressos';
 
 import { Wrapper, Container, Main } from './styles';
 
@@ -21,22 +21,22 @@ const Inicio: React.FC = () => {
     const items: Item[] = [
       {
         key: 'PAGE_HEADING',
-        render: () => <Heading>Eventos</Heading>,
+        render: () => <Cabeçalho>Eventos</Cabeçalho>,
       },
 
       {
         key: 'FOLLOWED_CATEGORIES',
-        render: () => <Title>Categorias</Title>,
+        render: () => <Titulo>Categorias</Titulo>,
         isTitle: true,
       },
-      { key: 'C1', render: () => <CategoryList /> },
+      { key: 'C1', render: () => <Categorias /> },
 
       {
         key: 'LIVE_CHANNELS',
-        render: () => <Title> Acontecendo hoje </Title>,
+        render: () => <Titulo> Acontecendo hoje </Titulo>,
         isTitle: true,
       },
-      { key: 'C2', render: () => <StreamList /> },
+      { key: 'C2', render: () => <AcontecendoHoje /> },
 
       {
         key: 'CONTINUE_WATCHING',
@@ -78,3 +78,4 @@ const Inicio: React.FC = () => {
 };
 
 export default Inicio;
+

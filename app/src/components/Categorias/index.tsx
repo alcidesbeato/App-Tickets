@@ -16,7 +16,7 @@ interface ItemProps {
   item: typeof data[0];
 }
 
-const CategoryList: React.FC = () => {
+const Categorias: React.FC = () => {
   const CategoryItem: React.FC<ItemProps> = ({ item }) => (
     <CategoryContainer>
       <CategoryImage source={item.source} />
@@ -37,4 +37,4 @@ const CategoryList: React.FC = () => {
   );
 };
 
-export default CategoryList;
+export default Categorias;

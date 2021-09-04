@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Container, HeadingText } from './styles';
 
-const Heading: React.FC = ({ children }) => {
+const Cabeçalho: React.FC = ({ children }) => {
   return (
     <Container>
       <HeadingText>{children}</HeadingText>
@@ -10,4 +10,4 @@ const Heading: React.FC = ({ children }) => {
   );
 };
 
-export default Heading;
+export default Cabeçalho;

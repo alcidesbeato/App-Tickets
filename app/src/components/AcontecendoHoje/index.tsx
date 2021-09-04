@@ -18,7 +18,7 @@ import {
   TagText,
 } from './styles';
 
-const StreamList: React.FC = () => {
+const AcontecendoHoje: React.FC = () => {
   const StreamItem = () => (
     <StreamContainer>
       <StreamThumbnail source={streamThumbnail} />
@@ -61,4 +61,4 @@ const StreamList: React.FC = () => {
   );
 };
 
-export default StreamList;
+export default AcontecendoHoje;

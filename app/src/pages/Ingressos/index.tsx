@@ -1,13 +1,89 @@
-import React from "react";
-import { Wrapper, Heading } from './styles';
+import React from 'react';
+import { View, FlatList } from 'react-native';
 
-const Inicio: React.FC = () => {
-    return (
-        <Wrapper>
-            <Heading> Eventos </Heading>
-        </Wrapper>
-    );
-    
+import Topo from '../../components/Topo';
+import Cabeçalho from '../../components/Cabeçalho';
+import Titulo from '../../components/Titulo';
+import Categorias from '../../components/Categorias';
+import AcontecendoHoje from '../../components/AcontecendoHoje';
+import MeusIngressos from '../../components/MeusIngressos';
+
+import { Wrapper, Container, Main } from './styles';
+
+interface Item {
+  key: string;
+  render: () => JSX.Element;
+  isTitle?: boolean;
+}
+
+const Ingressos: React.FC = () => {
+  const { data, indices } = React.useMemo(() => {
+    const items: Item[] = [
+      {
+        key: 'PAGE_HEADING',
+        render: () => <Cabeçalho>Eventos</Cabeçalho>,
+      },
+
+      {
+        key: 'FOLLOWED_CATEGORIES',
+        render: () => <Titulo>Categorias</Titulo>,
+        isTitle: true,
+      },
+      { key: 'C1', render: () => <Categorias /> },
+
+      {
+        key: 'LIVE_CHANNELS',
+        render: () => <Titulo> Acontecendo hoje </Titulo>,
+        isTitle: true,
+      },
+      { key: 'C2', render: () => <AcontecendoHoje /> },
+
+      {
+        key: 'CONTINUE_WATCHING',
+        render: () => <View />,
+        isTitle: true,
+      },
+      { key: 'C3', render: () => <View /> },
+
+      {
+        key: 'OFFLINE_CHANNELS',
+        render: () => <Titulo>Offline Channels</Titulo>,
+        isTitle: true,
+      },
+      { key: 'C4', render: () => <MeusIngressos /> },
+
+    ];
+
+    const indices: number[] = [];
+
+    items.forEach((item, index) => item.isTitle && indices.push(index));
+
+    return {
+      data: items,
+      indices,
+    };
+  }, []);
+
+  return (
+    <Wrapper>
+      <Container>
+        <Topo />
+
+        <Main>
+          <FlatList<Item>
+            data={data}
+            renderItem={({ item }) => item.render()}
+            keyExtractor={(item) => item.key}
+            stickyHeaderIndices={indices}
+            // Refresh Effect
+            onRefresh={() => {}}
+            refreshing={false}
+          />
+        </Main>
+      </Container>
+    </Wrapper>
+  );
 };
 
-export default Inicio;
+export default Ingressos;
+

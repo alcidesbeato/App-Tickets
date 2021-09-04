@@ -21,19 +21,19 @@ const Inicio: React.FC = () => {
     const items: Item[] = [
       {
         key: 'PAGE_HEADING',
-        render: () => <Heading>Following</Heading>,
+        render: () => <Heading>Eventos</Heading>,
       },
 
       {
         key: 'FOLLOWED_CATEGORIES',
-        render: () => <Title>Followed Categories</Title>,
+        render: () => <Title>Categorias</Title>,
         isTitle: true,
       },
       { key: 'C1', render: () => <CategoryList /> },
 
       {
         key: 'LIVE_CHANNELS',
-        render: () => <Title>Live Channels</Title>,
+        render: () => <Title> Acontecendo hoje </Title>,
         isTitle: true,
       },
       { key: 'C2', render: () => <StreamList /> },
@@ -44,13 +44,6 @@ const Inicio: React.FC = () => {
         isTitle: true,
       },
       { key: 'C3', render: () => <View /> },
-
-      {
-        key: 'OFFLINE_CHANNELS',
-        render: () => <Title>Offline Channels</Title>,
-        isTitle: true,
-      },
-      { key: 'C4', render: () => <ChannelList /> },
     ];
 
     const indices: number[] = [];

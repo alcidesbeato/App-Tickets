@@ -6,7 +6,7 @@ import arlivre from '../../images/arlivre.jpg';
 
 
 export default [
-  { name: 'ola', source: a },
+  { name: 'Marketing', source: a },
   { name: 'Musica', source: b },
   { name: 'Aprender', source: c },
   { name: 'Festa', source: d },

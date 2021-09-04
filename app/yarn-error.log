@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\Alcides Beato\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add expo-constant
+  C:\Program Files\nodejs\node.exe C:\Users\Alcides Beato\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add tabNavigator
 
 PATH: 
   C:\Python39\Scripts\;C:\Python39\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Java\jdk-15.0.1\bin;D:\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\OpenJDK\openjdk-11.0.12_7\bin;C:\Program Files\nodejs\;C:\Android\Sdk\emulator;C:\Android\Sdk\tools;C:\Android\Sdk\tools\bin;C:\Android\Sdk\platform-tools;C:\Users\Alcides Beato\AppData\Local\Microsoft\WindowsApps;C:\Users\Alcides Beato\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Alcides Beato\AppData\Local\GitHubDesktop\bin;C:\Users\Alcides Beato\.dotnet\tools;C:\Users\Alcides Beato\AppData\Roaming\npm
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/expo-constant: Not found
+  Error: https://registry.yarnpkg.com/tabNavigator: Not found
       at Request.params.callback [as _callback] (C:\Users\Alcides Beato\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66992:18)
       at Request.self.callback (C:\Users\Alcides Beato\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140763:22)
       at Request.emit (events.js:400:28)
@@ -44,6 +44,7 @@ npm manifest:
       "@react-navigation/native": "^6.0.2",
       "expo": "~42.0.1",
       "expo-app-loading": "^1.1.2",
+      "expo-constants": "^11.0.2",
       "expo-status-bar": "~1.0.4",
       "react": "16.13.1",
       "react-dom": "16.13.1",
@@ -60,7 +61,10 @@ npm manifest:
     "devDependencies": {
       "@babel/core": "^7.9.0",
       "@types/react": "^17.0.19",
-      "@types/react-native": "^0.64.13"
+      "@types/react-native": "^0.64.13",
+      "@types/styled-components": "^5.1.14",
+      "@types/styled-components-react-native": "^5.1.1",
+      "typescript": "^4.4.2"
     },
     "private": true
   }
@@ -1723,6 +1727,14 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/@types/hammerjs/-/hammerjs-2.0.40.tgz#ded0240b6ea1ad7afc1e60374c49087aaea5dbd8"
     integrity sha512-VbjwR1fhsn2h2KXAY4oy1fm7dCxaKy0D+deTb8Ilc3Eo3rc5+5eA4rfYmZaHgNJKxVyI0f6WIXzO2zLkVmQPHA==
   
+  "@types/hoist-non-react-statics@*":
+    version "3.3.1"
+    resolved "https://registry.yarnpkg.com/@types/hoist-non-react-statics/-/hoist-non-react-statics-3.3.1.tgz#1124aafe5118cb591977aeb1ceaaed1070eb039f"
+    integrity sha512-iMIqiko6ooLrTh1joXodJK5X9xeEALT1kM5G3ZLhD3hszxBdIEd5C75U834D9mLcINgD4OyZf5uQXjkuYydWvA==
+    dependencies:
+      "@types/react" "*"
+      hoist-non-react-statics "^3.3.0"
+  
   "@types/istanbul-lib-coverage@*", "@types/istanbul-lib-coverage@^2.0.0":
     version "2.0.3"
     resolved "https://registry.yarnpkg.com/@types/istanbul-lib-coverage/-/istanbul-lib-coverage-2.0.3.tgz#4ba8ddb720221f432e443bd5f9117fd22cfd4762"
@@ -1760,7 +1772,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.4.tgz#fcf7205c25dff795ee79af1e30da2c9790808f11"
     integrity sha512-rZ5drC/jWjrArrS8BR6SIr4cWpW09RNTYt9AMZo3Jwwif+iacXAqgVjm0B0Bv/S1jhDXKHqRVNCbACkJ89RAnQ==
   
-  "@types/react-native@^0.64.13":
+  "@types/react-native@*", "@types/react-native@^0.64.13":
     version "0.64.13"
     resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.64.13.tgz#9e57b85631380b75979a09f5a97e1884299e8d5a"
     integrity sha512-QSOBN6m3TKBPFAcDhuFItDQtw1Fo1/FKDTHGeyeTwBXd3bu0V9s+oHEhntHN7PUK5dAOYFWsnO0wynWwS/KRxQ==
@@ -1785,6 +1797,24 @@ Lockfile:
     version "1.0.1"
     resolved "https://registry.yarnpkg.com/@types/stack-utils/-/stack-utils-1.0.1.tgz#0a851d3bd96498fa25c33ab7278ed3bd65f06c3e"
     integrity sha512-l42BggppR6zLmpfU6fq9HEa2oGPEI8yrSPL3GITjfRInppYFahObbIQOQK3UGxEnyQpltZLaPe75046NOZQikw==
+  
+  "@types/styled-components-react-native@^5.1.1":
+    version "5.1.1"
+    resolved "https://registry.yarnpkg.com/@types/styled-components-react-native/-/styled-components-react-native-5.1.1.tgz#dcee7171b3844ce00a8303d8f5fcaeae7b25915d"
+    integrity sha512-1CJvTkaTb9YJXjmecZAZNyMHlvGdNtunRrOeyaXYdOzLKgwABIeEcZiO/TKT7CAzLdgPwBUj5Z4ixe4Vk5ndlw==
+    dependencies:
+      "@types/react" "*"
+      "@types/react-native" "*"
+      "@types/styled-components" "*"
+  
+  "@types/styled-components@*", "@types/styled-components@^5.1.14":
+    version "5.1.14"
+    resolved "https://registry.yarnpkg.com/@types/styled-components/-/styled-components-5.1.14.tgz#e9cf8cdb5eef9d139628183a84c083f630635d67"
+    integrity sha512-d6P1/tyNytqKwam3cQXq7a9uPtovc/mdAs7dBiz1YbDdNIT3X4WmuFU78YdSYh84TXVuhOwezZ3EeKuNBhwsHQ==
+    dependencies:
+      "@types/hoist-non-react-statics" "*"
+      "@types/react" "*"
+      csstype "^3.0.2"
   
   "@types/yargs-parser@*":
     version "20.2.1"
@@ -2968,7 +2998,7 @@ Lockfile:
       path-browserify "^1.0.0"
       url-parse "^1.4.4"
   
-  expo-constants@~11.0.1:
+  expo-constants@^11.0.2, expo-constants@~11.0.1:
     version "11.0.2"
     resolved "https://registry.yarnpkg.com/expo-constants/-/expo-constants-11.0.2.tgz#069930145908fef7d76bf72a1a874a1d4621af82"
     integrity sha512-CVjM+FbOMe/nFOSly5lnj0seMAYsjjc6+q3X8nIXG+gtw9iNBLwMX3Fz308rxiaPRJw+TBdd5/mcGJdNfoS+ew==
@@ -5987,6 +6017,11 @@ Lockfile:
     version "0.0.6"
     resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
     integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
+  
+  typescript@^4.4.2:
+    version "4.4.2"
+    resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.4.2.tgz#6d618640d430e3569a1dfb44f7d7e600ced3ee86"
+    integrity sha512-gzP+t5W4hdy4c+68bfcv0t400HVJMMd2+H9B7gae1nQlBzCqvrXX+6GL/b3GAgyTH966pzrZ70/fRjwAtZksSQ==
   
   ua-parser-js@^0.7.18:
     version "0.7.28"

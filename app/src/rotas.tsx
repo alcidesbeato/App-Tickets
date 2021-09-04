@@ -14,6 +14,7 @@ const Routes: React.FC = () => {
   return (
     <NavigationContainer>
       <Navigator>
+
         <Screen 
         name="Inicio" 
         component={Inicio} 

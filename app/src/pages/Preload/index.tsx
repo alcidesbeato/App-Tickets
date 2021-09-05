@@ -1,16 +1,34 @@
 import React,{useContext, useEffect} from "react";
 import { Wrapper,  Heading, LoadingIcon } from "./styles";
-import { Image } from "react-native";
-import AsyncStorage from "@react-native-community/async-storage";
+import {  Image } from "react-native";
 import { useNavigation } from "@react-navigation/native";
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import SignIn from "../SignIn";
+
 
 // use context
 //use api
 
 const Preload: React.FC = () => {
-    
+
     const navigation = useNavigation();
 
+    useEffect(()=>{
+        const checkToken = async () => {
+            const token = await AsyncStorage.getItem('token');
+            if (token){
+                
+            }//if
+
+            else {
+                navigation.navigate('SignIn');
+            }//else
+
+        }//checktoken
+
+        checkToken();
+    }, []);
+   
     return(
         <Wrapper>
 

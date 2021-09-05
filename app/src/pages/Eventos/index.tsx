@@ -1,11 +1,11 @@
 import React,{useState} from "react";
 import {SafeAreaView, StyleSheet, View,Text, TouchableHighlight,TextInput, FlatList } from "react-native";
-import styled from "styled-components/native";
 import { Wrapper, Container, Main, Corpo } from './styles';
 
 import Topo from '../../components/Topo';
 import Cabeçalho from '../../components/Cabeçalho';
 import Titulo from '../../components/Titulo';
+import { ScrollView } from "react-native-gesture-handler";
 
 interface Item {
     key: string;
@@ -69,7 +69,7 @@ const { data, indices } = React.useMemo(() => {
         <Wrapper>
             <Container>
                 <Topo />
-            
+            <ScrollView>
             <Main>
             <FlatList<Item>
             data={data}
@@ -134,12 +134,12 @@ const { data, indices } = React.useMemo(() => {
             ></TextInput>
 
         <TouchableHighlight style={estilos.bottom}> 
-        <Text>Concluir</Text>
+        <Text> Concluir </Text>
         </TouchableHighlight>
 
 
          </SafeAreaView>
-
+         </ScrollView>
          </Container>
          </Wrapper>
     );

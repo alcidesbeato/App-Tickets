@@ -1,5 +1,5 @@
 import styled from "styled-components/native";
-import { Platform } from 'react-native';
+import { Platform,StyleSheet } from 'react-native';
 import Constants from "expo-constants";
 
 import colors from '../../styles/colors';

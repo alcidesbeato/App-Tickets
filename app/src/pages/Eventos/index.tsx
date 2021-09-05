@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import {SafeAreaView, StyleSheet, View, TouchableHighlight,TextInput, FlatList } from "react-native";
+import {SafeAreaView, StyleSheet, View,Text, TouchableHighlight,TextInput, FlatList } from "react-native";
 import styled from "styled-components/native";
 import { Wrapper, Container, Main, Corpo } from './styles';
 
@@ -14,7 +14,7 @@ interface Item {
   }
 
 const estilos = StyleSheet.create({
-    conteiner:{
+    sla:{
         padding: 15
     },
 
@@ -23,7 +23,12 @@ const estilos = StyleSheet.create({
         borderRadius:10,
         padding:10,
         backgroundColor: "gray"
-    }
+    },
+    bottom:{
+      backgroundColor:'white',
+      paddingTop:10,
+      padding:15
+    },
 
 });
 
@@ -77,7 +82,7 @@ const { data, indices } = React.useMemo(() => {
             />
             </Main>
 
-            <SafeAreaView style = {estilos.conteiner} >
+            <SafeAreaView style = {estilos.sla} >
 
             
             <Corpo> Nome evento: </Corpo>
@@ -127,6 +132,11 @@ const { data, indices } = React.useMemo(() => {
             onChangeText={(texto)=>{setPalavra6(texto)}}
             keyboardType='default'
             ></TextInput>
+
+        <TouchableHighlight style={estilos.bottom}> 
+        <Text>Concluir</Text>
+        </TouchableHighlight>
+
 
          </SafeAreaView>
 

@@ -10,6 +10,7 @@ import Inicio from './pages/Inicio';
 import Ingressos from './pages/Ingressos';
 import Eventos from './pages/Eventos';
 import Cadastro from './pages/Cadastro';
+import Buscar from './pages/Buscar';
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
@@ -26,6 +27,22 @@ const Routes: React.FC = () => {
             return(
               <MaterialCommunityIcons
                 name= "home"
+                size={size}
+                color={focused ? colors.red : colors.black}
+              /> 
+                  );
+                                           },
+              }}
+        />
+
+<Screen 
+        name="Buscar" 
+        component={Buscar} 
+        options={{
+          tabBarIcon: ({size,focused}) => {
+            return(
+              <Ionicons
+                name="search" 
                 size={size}
                 color={focused ? colors.red : colors.black}
               /> 

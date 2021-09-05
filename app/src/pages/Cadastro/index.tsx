@@ -1,7 +1,6 @@
 import React,{useState} from "react";
-import {SafeAreaView, Button, Alert, StyleSheet, View,Text, TouchableHighlight,TextInput, FlatList, KeyboardAvoidingView } from "react-native";
+import {SafeAreaView, Button, Alert, StyleSheet, View,TextInput, FlatList } from "react-native";
 import { Wrapper, Container, Main, Corpo } from './styles';
-import { Platform } from "react-native";
 import Topo from '../../components/Topo';
 import Cabeçalho from '../../components/Cabeçalho';
 import Titulo from '../../components/Titulo';
@@ -27,22 +26,27 @@ const estilos = StyleSheet.create({
         padding:10,
         backgroundColor: "red"
     },
-    bottom:{
+    buttom:{
       backgroundColor:'white',
       paddingTop:10,
       padding:10
     },
+    area: {
+      flexDirection: 'row',
+      alignItems: 'center',
+    },
 
 });
 
-const Cadastro: React.FC = () => {
-    
-const [palavra1,setPalavra1] = useState(0)
-const [palavra2,setPalavra2] = useState(0)
-const [palavra3,setPalavra3] = useState(0)
-const [palavra4,setPalavra4] = useState(0)
-const [palavra5,setPalavra5] = useState(0)
-const [palavra6,setPalavra6] = useState(0)
+const Eventos: React.FC = () => {
+const [searchText1, setSearchText1] = useState('');
+const [searchText2, setSearchText2] = useState('');
+const [searchText3, setSearchText3] = useState('');
+const [searchText4, setSearchText4] = useState('');
+const [searchText5, setSearchText5] = useState('');
+const [searchText6, setSearchText6] = useState('');
+
+
 
 const { data, indices } = React.useMemo(() => {
     const items: Item[] = [
@@ -52,7 +56,7 @@ const { data, indices } = React.useMemo(() => {
         },
   
         {
-          key: 'Ingressos',
+          key: 'Cadastro',
           render: () => <Titulo>cadastro</Titulo>,
           isTitle: true,
         },  
@@ -90,57 +94,69 @@ const { data, indices } = React.useMemo(() => {
             <SafeAreaView style = {estilos.sla} >
         
             <Corpo> Nome completo: </Corpo>
-            <TextInput
-            style={estilos.display}
-            value={String(palavra1)}
-            onChangeText={(texto)=>{setPalavra1(texto)}}
-            keyboardType='default'
-            ></TextInput>
+            <View style={estilos.area}>
+              <TextInput
+              style={estilos.display}
+              placeholder="Digite nome completo:"
+              placeholderTextColor="#888"
+              value={searchText1}
+              onChangeText={(t) => setSearchText1(t)} />
+            </View>
            
-            <Corpo> Email:  </Corpo>
-            <TextInput
-            style={estilos.display}
-            value={String(palavra2)}
-            onChangeText={(texto)=>{setPalavra2(texto)}}
-            keyboardType='default'
-            ></TextInput>
+            <Corpo> E-mail:  </Corpo>
+            <View style={estilos.area}>
+              <TextInput
+                style={estilos.display}
+                placeholder="Digite e-mail:"
+                placeholderTextColor="#888"
+                value={searchText2}
+                onChangeText={(t) => setSearchText2(t)} />
+            </View>
 
             <Corpo> Telefone: </Corpo>
-            <TextInput
-            style={estilos.display}
-            value={String(palavra3)}
-            onChangeText={(texto)=>{setPalavra3(texto)}}
-            keyboardType='default'
-            ></TextInput>
+            <View style={estilos.area}>
+              <TextInput
+                style={estilos.display}
+                placeholder="Digite o telefone:"
+                placeholderTextColor="#888"
+                value={searchText3}
+                onChangeText={(t) => setSearchText3(t)} />
+            </View>
 
-            <Corpo> Cpf: </Corpo>
-            <TextInput
-            style={estilos.display}
-            value={String(palavra4)}
-            onChangeText={(texto)=>{setPalavra4(texto)}}
-            keyboardType='default'
-            ></TextInput>
+            <Corpo> CPF: </Corpo>
+            <View style={estilos.area}>
+              <TextInput
+                style={estilos.display}
+                placeholder="Digite o CPF:"
+                placeholderTextColor="#888"
+                value={searchText4}
+                onChangeText={(t) => setSearchText4(t)} />
+            </View>
 
-            <Corpo> Usuario:  </Corpo>
-            <TextInput
-            style={estilos.display}
-            value={String(palavra5)}
-            onChangeText={(texto)=>{setPalavra5(texto)}}
-            keyboardType='default'
-            ></TextInput>
+            <Corpo> Nome de usuário:  </Corpo>
+            <View style={estilos.area}>
+              <TextInput
+                style={estilos.display}
+                placeholder="Digite o usuário:"
+                placeholderTextColor="#888"
+                value={searchText5}
+                onChangeText={(t) => setSearchText5(t)} />
+            </View>
 
             <Corpo> Senha: </Corpo>
-            <TextInput
-            style={estilos.display}
-            value={String(palavra6)}
-            onChangeText={(texto)=>{setPalavra6(texto)}}
-            keyboardType='default'
-            ></TextInput>
+            <View style={estilos.area}>
+              <TextInput
+                style={estilos.display}
+                placeholder="Digite a senha:"
+                placeholderTextColor="#888"
+                value={searchText6}
+                onChangeText={(t) => setSearchText6(t)} />
+               </View>
 
         <Button 
         color='red'
-        title="Concluir cadastro usuário"
-        onPress={() => Alert.alert('Cadastro usuário concluido com sucesso')}
+        title="Concluir cadastro evento"
+        onPress={() => Alert.alert('Cadastro evento concluido com sucesso')}
         />
 
          </SafeAreaView>
@@ -151,4 +167,4 @@ const { data, indices } = React.useMemo(() => {
     
 };
 
-export default Cadastro;
+export default Eventos;

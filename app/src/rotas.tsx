@@ -13,8 +13,6 @@ import Eventos from './pages/Eventos';
 import Cadastro from './pages/Cadastro';
 import Buscar from './pages/Buscar';
 import Preload from './pages/Preload';
-import SignIn from './pages/SignIn';
-import SignUp from './pages/SignUp';
 
 import UserContextProvider from './contexts/UserContext';
 
@@ -37,14 +35,6 @@ const Routes: React.FC = () => {
         <Stack.Screen 
         name= "Preload" 
         component={Preload}
-        />
-        <Stack.Screen 
-        name= "SignIn" 
-        component={SignIn}
-        />
-        <Stack.Screen 
-        name= "SignUp" 
-        component={SignUp}
         />
 
         <Screen 

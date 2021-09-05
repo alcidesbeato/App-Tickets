@@ -29,26 +29,17 @@ const Routes: React.FC = () => {
        }}
        >
 
-        <Stack.Screen 
+      <Stack.Screen 
         name= "Preload" 
         component={Preload}
         />
 
-        <Screen 
-        name="Início" 
-        component={Inicio} 
-        options={{
-          tabBarIcon: ({size,focused}) => {
-            return(
-              <MaterialCommunityIcons
-                name= "home"
-                size={size}
-                color={focused ? colors.red : colors.black}
-              /> 
-                  );
-                                           },
-              }}
+        <Stack.Screen 
+        name= "Inicio" 
+        component={Inicio}
         />
+        
+        
 
         <Screen 
         name="Buscar" 

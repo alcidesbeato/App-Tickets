@@ -13,7 +13,7 @@ import { Container, Avatar, OnlineStatus, RightSide, Button } from './styles';
 const Topo: React.FC = () => {
   return (
     <Container>
-      <Avatar>
+      <Avatar onPress={() => Alert.alert('Perfil sendo carregado...')} >
          <OnlineStatus /> 
       </Avatar>
 

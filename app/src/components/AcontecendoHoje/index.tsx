@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Alert } from 'react-native';
 import streamThumbnail from '../../images/stream_thumbnail.jpg';
 
 import {
@@ -19,8 +19,8 @@ import {
 } from './styles';
 
 const AcontecendoHoje: React.FC = () => {
-  const StreamItem = () => (
-    <StreamContainer>
+  const Item = () => (
+    <StreamContainer onPress={() => Alert.alert('Evento sendo carregado...')}>
       <StreamThumbnail source={streamThumbnail} />
 
       <StreamRow>
@@ -31,7 +31,7 @@ const AcontecendoHoje: React.FC = () => {
           </StreamHeader>
 
           <StreamDescription numberOfLines={1}>
-            Desenvolver app frontend
+            Desenvolver App frontend
           </StreamDescription>
 
           <StreamCategory numberOfLines={1}>
@@ -41,10 +41,10 @@ const AcontecendoHoje: React.FC = () => {
 
         <TagRow>
           <TagView>
-            <TagText>Portuguese</TagText>
+            <TagText>Portugues</TagText>
           </TagView>
           <TagView>
-            <TagText>Web Development</TagText>
+            <TagText>Desenvolvimento Mobile</TagText>
           </TagView>
         </TagRow>
       </StreamRow>
@@ -53,10 +53,21 @@ const AcontecendoHoje: React.FC = () => {
 
   return (
     <List>
-      <StreamItem />
-      <StreamItem />
-      <StreamItem />
-      <StreamItem />
+      <Item />
+      <Item />
+      <Item />
+      <Item />
+      <Item />
+      <Item />
+      <Item />
+      <Item />
+      <Item />
+      <Item />
+      <Item />
+      <Item />
+      <Item />
+      <Item />
+
     </List>
   );
 };

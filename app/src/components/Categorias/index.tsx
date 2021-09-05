@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Alert } from 'react-native';
 import {
   List,
   CategoryContainer,
@@ -18,7 +18,7 @@ interface ItemProps {
 
 const Categorias: React.FC = () => {
   const CategoryItem: React.FC<ItemProps> = ({ item }) => (
-    <CategoryContainer>
+    <CategoryContainer onPress={() => Alert.alert('Categorias sendo carregadas...')} >
       <CategoryImage source={item.source} />
       <CategoryName numberOfLines={1}>{item.name}</CategoryName>
       <CategoryStatus>

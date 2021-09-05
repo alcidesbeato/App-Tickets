@@ -13,7 +13,7 @@ import {
 } from './styles';
 
 const MeusIngressos: React.FC = () => {
-  const ChannelItem = () => (
+  const Ingresso = () => (
     <ChannelContainer>
       <LeftSide>
         <Avatar />
@@ -31,16 +31,28 @@ const MeusIngressos: React.FC = () => {
 
   return (
     <List>
-      <ChannelItem />
-      <ChannelItem />
-      <ChannelItem />
-      <ChannelItem />
-      <ChannelItem />
-      <ChannelItem />
-      <ChannelItem />
-      <ChannelItem />
-      <ChannelItem />
-      <ChannelItem />
+      <Ingresso />
+      <Ingresso />
+      <Ingresso />
+      <Ingresso />
+      <Ingresso />
+      <Ingresso />
+      <Ingresso />
+      <Ingresso />
+      <Ingresso />
+      <Ingresso />
+      <Ingresso />
+      <Ingresso />
+      <Ingresso />
+      <Ingresso />
+      <Ingresso />
+      <Ingresso />
+      <Ingresso />
+      <Ingresso />
+      <Ingresso />
+      <Ingresso />
+      <Ingresso />
+      <Ingresso />
     </List>
   );
 };

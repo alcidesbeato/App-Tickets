@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import {SafeAreaView, StyleSheet, View,Text, TouchableHighlight,TextInput, FlatList } from "react-native";
+import {SafeAreaView, Button, Alert, StyleSheet, View,Text, TouchableHighlight,TextInput, FlatList } from "react-native";
 import { Wrapper, Container, Main, Corpo } from './styles';
 
 import Topo from '../../components/Topo';
@@ -27,7 +27,7 @@ const estilos = StyleSheet.create({
     bottom:{
       backgroundColor:'white',
       paddingTop:10,
-      padding:15
+      padding:10
     },
 
 });
@@ -133,9 +133,11 @@ const { data, indices } = React.useMemo(() => {
             keyboardType='default'
             ></TextInput>
 
-        <TouchableHighlight style={estilos.bottom}> 
-        <Text> Concluir </Text>
-        </TouchableHighlight>
+        <Button 
+        color='gray'
+        title="Concluir cadastro"
+        onPress={() => Alert.alert('Cadastro concluido com sucesso')}
+        />
 
 
          </SafeAreaView>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Alert } from 'react-native';
 import {
   MaterialIcons,
   MaterialCommunityIcons,
@@ -22,6 +23,7 @@ const Topo: React.FC = () => {
             name="notifications-none"
             size={26}
             color={colors.black}
+            onPress={() => Alert.alert('Notificações sendo carregadas...')}
           />
         </Button>
 
@@ -30,6 +32,7 @@ const Topo: React.FC = () => {
             name="message-outline"
             size={26}
             color={colors.black}
+            onPress={() => Alert.alert('Mensagens sendo carregadas...')}
           />
         </Button>
 
@@ -37,7 +40,10 @@ const Topo: React.FC = () => {
           <Feather 
           name="search" 
           size={26} 
-          color={colors.black} />
+          color={colors.black} 
+          onPress={() => Alert.alert('Busca sendo carregada...')}
+        />
+          
         </Button>
         
       </RightSide>

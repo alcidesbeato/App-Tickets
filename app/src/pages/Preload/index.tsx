@@ -3,8 +3,6 @@ import { Wrapper,  Heading, LoadingIcon } from "./styles";
 import {  Image } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import SignIn from "../SignIn";
-
 
 // use context
 //use api
@@ -22,6 +20,7 @@ const Preload: React.FC = () => {
 
             else {
                 navigation.navigate('SignIn');
+
             }//else
 
         }//checktoken

@@ -16,12 +16,16 @@ import Preload from './pages/Preload';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 
+import UserContextProvider from './contexts/UserContext';
+
+
 const { Navigator, Screen } = createBottomTabNavigator();
 
 const Stack = createStackNavigator();
 
 const Routes: React.FC = () => {
   return (
+    <UserContextProvider>   
     <NavigationContainer>
        <Navigator
        initialRouteName="Preload"
@@ -59,7 +63,7 @@ const Routes: React.FC = () => {
               }}
         />
 
-<Screen 
+        <Screen 
         name="Buscar" 
         component={Buscar} 
         options={{
@@ -125,6 +129,7 @@ const Routes: React.FC = () => {
          
       </Navigator> 
     </NavigationContainer>
+    </UserContextProvider>
   );
 };
 

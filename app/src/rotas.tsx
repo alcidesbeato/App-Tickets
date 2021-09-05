@@ -23,7 +23,7 @@ const Stack = createStackNavigator();
 const Routes: React.FC = () => {
   return (
     <NavigationContainer>
-       <Stack.Navigator
+       <Navigator
        initialRouteName="Preload"
        screenOptions={{
          headerShown: false
@@ -123,9 +123,11 @@ const Routes: React.FC = () => {
               }}
         />
          
-      </Stack.Navigator> 
+      </Navigator> 
     </NavigationContainer>
   );
 };
 
 export default Routes;
+
+//colocar Stack.navigator em vez de navigator

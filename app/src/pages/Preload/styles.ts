@@ -16,8 +16,14 @@ export const Wrapper = styled.SafeAreaView`
 `;
 
 export const Heading = styled.Text`
-  color: ${colors.purple};
+  color: ${colors.orange};
   font-family: roboto_500;
   font-size: 30px;
+  margin-top: 40px;
 `;
 
+export const LoadingIcon = styled.ActivityIndicator `
+    margin-top: 40px;
+    size= extralarge;
+    color= ${colors.orange};
+`;

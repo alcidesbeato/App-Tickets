@@ -26,7 +26,7 @@ const Inicio: React.FC = () => {
 
       {
         key: 'Lista Categorias',
-        render: () => <Titulo>Categorias</Titulo>,
+        render: () => <Titulo>Categorias dos Eventos</Titulo>,
         isTitle: true,
       },
       { key: 'C1', render: () => <Categorias /> },

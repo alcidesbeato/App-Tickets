@@ -3,6 +3,7 @@ import { View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
+import { createStackNavigator } from '@react-navigation/stack';
 
 import colors from './styles/colors';
 
@@ -11,13 +12,36 @@ import Ingressos from './pages/Ingressos';
 import Eventos from './pages/Eventos';
 import Cadastro from './pages/Cadastro';
 import Buscar from './pages/Buscar';
+import Preload from './pages/Preload';
+import SignIn from './pages/SignIn';
+import SignUp from './pages/SignUp';
 
 const { Navigator, Screen } = createBottomTabNavigator();
+
+const Stack = createStackNavigator();
 
 const Routes: React.FC = () => {
   return (
     <NavigationContainer>
-      <Navigator>
+       <Stack.Navigator
+       initialRouteName="Preload"
+       screenOptions={{
+         headerShown: false
+       }}
+       >
+
+        <Stack.Screen 
+        name= "Preload" 
+        component={Preload}
+        />
+        <Stack.Screen 
+        name= "SignIn" 
+        component={SignIn}
+        />
+        <Stack.Screen 
+        name= "SignUp" 
+        component={SignUp}
+        />
 
         <Screen 
         name="Início" 
@@ -98,8 +122,8 @@ const Routes: React.FC = () => {
                                            },
               }}
         />
-
-      </Navigator>
+         
+      </Stack.Navigator> 
     </NavigationContainer>
   );
 };

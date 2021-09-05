@@ -32,7 +32,7 @@ const Categorias: React.FC = () => {
     <List>
       {data.map((item) => (
         <CategoryItem key={item.name} item={item} />
-      ))}
+      ))} 
     </List>
   );
 };

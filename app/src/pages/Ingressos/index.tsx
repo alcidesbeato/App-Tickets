@@ -63,4 +63,3 @@ const Ingressos: React.FC = () => {
 };
 
 export default Ingressos;
-

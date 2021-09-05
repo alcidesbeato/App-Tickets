@@ -9,31 +9,43 @@ import {
 import colors from '../../styles/colors';
 
 import { Container, Avatar, OnlineStatus, RightSide, Button } from './styles';
+import { useNavigation } from '@react-navigation/native';
 
 const Topo: React.FC = () => {
+  const navigation = useNavigation();
   return (
     <Container>
-      <Avatar onPress={() => Alert.alert('Perfil sendo carregado...')} >
+      <Avatar onPress={() => navigation.navigate('Cadastro') } >
          <OnlineStatus /> 
       </Avatar>
 
       <RightSide>
+
         <Button>
-          <MaterialIcons
-            name="notifications-none"
+          <MaterialCommunityIcons
+            name= "home"
             size={26}
             color={colors.black}
-            onPress={() => Alert.alert('Notificações sendo carregadas...')}
+            onPress={() => navigation.navigate('Inicio')}
           />
         </Button>
 
         <Button>
           <MaterialCommunityIcons
-            name="message-outline"
+            name= "ticket"
             size={26}
             color={colors.black}
-            onPress={() => Alert.alert('Mensagens sendo carregadas...')}
+            onPress={() => navigation.navigate('Ingressos')}
           />
+        </Button>
+
+        <Button>
+          <MaterialCommunityIcons 
+          name= "calendar-plus"
+          size={26} 
+          color={colors.black} 
+          onPress={() => navigation.navigate('Eventos') }
+        />
         </Button>
 
         <Button>
@@ -41,9 +53,8 @@ const Topo: React.FC = () => {
           name="search" 
           size={26} 
           color={colors.black} 
-          onPress={() => Alert.alert('Busca sendo carregada...')}
+          onPress={() => navigation.navigate('Buscar') }
         />
-          
         </Button>
         
       </RightSide>

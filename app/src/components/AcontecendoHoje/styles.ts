@@ -33,7 +33,7 @@ export const StreamHeader = styled.View`
 `;
 
 export const StreamAvatar = styled.View`
-  background: ${colors.red};
+  background: ${colors.orange};
   width: 20px;
   height: 20px;
   border-radius: 10px;

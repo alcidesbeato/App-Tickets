@@ -24,7 +24,7 @@ const estilos = StyleSheet.create({
         borderWidth: 1,
         borderRadius:10,
         padding:10,
-        backgroundColor: "red"
+        backgroundColor: "orange"
     },
     buttom:{
       backgroundColor:'white',
@@ -52,12 +52,12 @@ const { data, indices } = React.useMemo(() => {
     const items: Item[] = [
         {
           key: 'Cabeçalho',
-          render: () => <Cabeçalho>Criar Evento</Cabeçalho>,
+          render: () => <Cabeçalho>Buscar Evento</Cabeçalho>,
         },
   
         {
           key: 'Ingressos',
-          render: () => <Titulo>cadastro</Titulo>,
+          render: () => <Titulo>bsuca</Titulo>,
           isTitle: true,
         },  
       ];
@@ -123,40 +123,11 @@ const { data, indices } = React.useMemo(() => {
                 onChangeText={(t) => setSearchText3(t)} />
             </View>
 
-            <Corpo> Local: </Corpo>
-            <View style={estilos.area}>
-              <TextInput
-                style={estilos.display}
-                placeholder="Digite o local:"
-                placeholderTextColor="#888"
-                value={searchText4}
-                onChangeText={(t) => setSearchText4(t)} />
-            </View>
-
-            <Corpo> Data:  </Corpo>
-            <View style={estilos.area}>
-              <TextInput
-                style={estilos.display}
-                placeholder="Digite a data:"
-                placeholderTextColor="#888"
-                value={searchText5}
-                onChangeText={(t) => setSearchText5(t)} />
-            </View>
-
-            <Corpo> Hora: </Corpo>
-            <View style={estilos.area}>
-              <TextInput
-                style={estilos.display}
-                placeholder="Digite a hora:"
-                placeholderTextColor="#888"
-                value={searchText6}
-                onChangeText={(t) => setSearchText6(t)} />
-               </View>
 
         <Button 
-        color='red'
-        title="Concluir cadastro evento"
-        onPress={() => Alert.alert('Cadastro evento concluido com sucesso')}
+        color='orange'
+        title="Buscar"
+        onPress={() => Alert.alert('Buscando em andamento...')}
         />
 
          </SafeAreaView>

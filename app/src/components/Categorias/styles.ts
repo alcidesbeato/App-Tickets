@@ -31,7 +31,7 @@ export const CategoryStatus = styled.View`
 `;
 
 export const RedCircle = styled.View`
-  background: ${colors.red};
+  background: ${colors.orange};
   width: 9px;
   height: 9px;
   border-radius: 4.5px;
@@ -40,6 +40,6 @@ export const RedCircle = styled.View`
 export const Info = styled.Text`
   margin-left: 4px;
   padding-bottom: 1px;
-  color: ${colors.gray};
+  color: ${colors.black};
   font-family: roboto_500;
 `;

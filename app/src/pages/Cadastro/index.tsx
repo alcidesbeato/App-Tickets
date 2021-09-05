@@ -24,7 +24,7 @@ const estilos = StyleSheet.create({
         borderWidth: 1,
         borderRadius:10,
         padding:10,
-        backgroundColor: "red"
+        backgroundColor: "orange"
     },
     buttom:{
       backgroundColor:'white',
@@ -154,7 +154,7 @@ const { data, indices } = React.useMemo(() => {
                </View>
 
         <Button 
-        color='red'
+        color='orange'
         title="Concluir cadastro evento"
         onPress={() => Alert.alert('Cadastro evento concluido com sucesso')}
         />

@@ -22,7 +22,7 @@ const Stack = createStackNavigator();
 const Routes: React.FC = () => {
   return (
     <NavigationContainer>
-       <Navigator
+       <Stack.Navigator
        initialRouteName="Preload"
        screenOptions={{
          headerShown: false
@@ -39,73 +39,27 @@ const Routes: React.FC = () => {
         component={Inicio}
         />
         
-        
-
-        <Screen 
-        name="Buscar" 
-        component={Buscar} 
-        options={{
-          tabBarIcon: ({size,focused}) => {
-            return(
-              <Ionicons
-                name="search" 
-                size={size}
-                color={focused ? colors.red : colors.black}
-              /> 
-                  );
-                                           },
-              }}
+        <Stack.Screen 
+        name= "Buscar" 
+        component={Buscar}
         />
 
-        <Screen 
-        name="Ingressos" 
-        component={Ingressos} 
-        options={{
-          tabBarIcon: ({size,focused}) => {
-            return(
-              <MaterialCommunityIcons
-                name= "ticket"
-                size={size}
-                color={focused ? colors.red : colors.black}
-              /> 
-                  );
-                                           },
-              }}
+          <Stack.Screen 
+        name= "Ingressos" 
+        component={Ingressos}
         />
 
-        <Screen 
-        name="Eventos" 
-        component={Eventos} 
-        options={{
-          tabBarIcon: ({size,focused}) => {
-            return(
-              <MaterialCommunityIcons
-                name= "location-enter"
-                size={size}
-                color={focused ? colors.red : colors.black}
-              /> 
-                  );
-                                           },
-              }}
+        <Stack.Screen 
+        name= "Eventos" 
+        component={Eventos}
         />
 
-        <Screen 
-        name="Cadastro" 
+        <Stack.Screen 
+        name= "Cadastro" 
         component={Cadastro}
-        options={{
-          tabBarIcon: ({size,focused}) => {
-            return(
-              <Ionicons
-                name= "person"
-                size={size}
-                color={focused ? colors.red : colors.black}
-              /> 
-                  );
-                                           },
-              }}
         />
          
-      </Navigator> 
+      </Stack.Navigator> 
     </NavigationContainer>
   );
 };

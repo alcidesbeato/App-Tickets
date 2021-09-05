@@ -4,8 +4,6 @@ import { View, FlatList } from 'react-native';
 import Topo from '../../components/Topo';
 import Cabeçalho from '../../components/Cabeçalho';
 import Titulo from '../../components/Titulo';
-import Categorias from '../../components/Categorias';
-import AcontecendoHoje from '../../components/AcontecendoHoje';
 import MeusIngressos from '../../components/MeusIngressos';
 
 import { Wrapper, Container, Main } from './styles';

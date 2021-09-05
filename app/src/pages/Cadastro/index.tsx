@@ -1,13 +1,13 @@
 import React from "react";
 import { Wrapper, Heading } from './styles';
 
-const Inicio: React.FC = () => {
+const Cadastro: React.FC = () => {
     return (
         <Wrapper>
-            <Heading> Cadastro </Heading>
+            <Heading> Sla </Heading>
         </Wrapper>
     );
     
 };
 
-export default Inicio;
+export default Cadastro;

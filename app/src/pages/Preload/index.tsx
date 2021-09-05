@@ -17,7 +17,7 @@ const Preload: React.FC = () => {
             }//if
 
             else {
-                navigation.navigate('SignIn');
+                navigation.navigate('Inicio');
 
             }//else
 

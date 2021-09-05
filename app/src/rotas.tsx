@@ -14,8 +14,6 @@ import Cadastro from './pages/Cadastro';
 import Buscar from './pages/Buscar';
 import Preload from './pages/Preload';
 
-import UserContextProvider from './contexts/UserContext';
-
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
@@ -23,7 +21,6 @@ const Stack = createStackNavigator();
 
 const Routes: React.FC = () => {
   return (
-    <UserContextProvider>   
     <NavigationContainer>
        <Navigator
        initialRouteName="Preload"
@@ -119,7 +116,6 @@ const Routes: React.FC = () => {
          
       </Navigator> 
     </NavigationContainer>
-    </UserContextProvider>
   );
 };
 

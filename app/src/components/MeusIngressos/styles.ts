@@ -19,7 +19,7 @@ export const LeftSide = styled.View`
 `;
 
 export const Avatar = styled.View`
-  background: ${colors.tag};
+  background: ${colors.red};
   width: 48px;
   height: 48px;
   border-radius: 24px;

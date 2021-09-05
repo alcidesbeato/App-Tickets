@@ -1,4 +1,5 @@
 import React from 'react';
+import { Alert } from 'react-native';
 
 import {
   List,
@@ -14,7 +15,7 @@ import {
 
 const MeusIngressos: React.FC = () => {
   const Ingresso = () => (
-    <ChannelContainer>
+    <ChannelContainer onPress={() => Alert.alert('Ingresso sendo carregado...')}>
       <LeftSide>
         <Avatar />
         <Column>

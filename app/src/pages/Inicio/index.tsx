@@ -21,7 +21,7 @@ const Inicio: React.FC = () => {
     const items: Item[] = [
       {
         key: 'Cabeçalho',
-        render: () => <Cabeçalho>Eventos</Cabeçalho>,
+        render: () => <Cabeçalho>Bem vindo a Ticket!</Cabeçalho>,
       },
 
       {

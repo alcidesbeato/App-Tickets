@@ -1,7 +1,7 @@
 import React,{useState} from "react";
-import {SafeAreaView, Button, Alert, StyleSheet, View,Text, TouchableHighlight,TextInput, FlatList } from "react-native";
+import {SafeAreaView, Button, Alert, StyleSheet, View,Text, TouchableHighlight,TextInput, FlatList, KeyboardAvoidingView } from "react-native";
 import { Wrapper, Container, Main, Corpo } from './styles';
-
+import { Platform } from "react-native";
 import Topo from '../../components/Topo';
 import Cabeçalho from '../../components/Cabeçalho';
 import Titulo from '../../components/Titulo';
@@ -14,6 +14,9 @@ interface Item {
   }
 
 const estilos = StyleSheet.create({
+  a:{
+      flex: 1
+  },
     sla:{
         padding: 15
     },
@@ -22,7 +25,7 @@ const estilos = StyleSheet.create({
         borderWidth: 1,
         borderRadius:10,
         padding:10,
-        backgroundColor: "gray"
+        backgroundColor: "red"
     },
     bottom:{
       backgroundColor:'white',
@@ -70,6 +73,7 @@ const { data, indices } = React.useMemo(() => {
             <Container>
                 <Topo />
             <ScrollView>
+              
             <Main>
             <FlatList<Item>
             data={data}
@@ -81,10 +85,10 @@ const { data, indices } = React.useMemo(() => {
             refreshing={false}
             />
             </Main>
+          
 
             <SafeAreaView style = {estilos.sla} >
-
-            
+        
             <Corpo> Nome evento: </Corpo>
             <TextInput
             style={estilos.display}
@@ -134,11 +138,10 @@ const { data, indices } = React.useMemo(() => {
             ></TextInput>
 
         <Button 
-        color='gray'
-        title="Concluir cadastro"
-        onPress={() => Alert.alert('Cadastro concluido com sucesso')}
+        color='red'
+        title="Concluir cadastro evento"
+        onPress={() => Alert.alert('Cadastro evento concluido com sucesso')}
         />
-
 
          </SafeAreaView>
          </ScrollView>

@@ -5,51 +5,51 @@ export const List = styled.View`
   padding: 8px 0 24px;
 `;
 
-export const StreamContainer = styled.TouchableOpacity`
+export const Container = styled.TouchableOpacity`
   flex-direction: row;
   flex: 1;
   margin-bottom: 24px;
   margin-right: 24px;
 `;
 
-export const StreamRow = styled.View`
+export const Row = styled.View`
   margin-left: 11px;
   flex: 1;
 `;
 
-export const StreamThumbnail = styled.Image`
+export const Thumbnail = styled.Image`
   width: 119px;
   height: 66px;
 `;
 
-export const StreamColumn = styled.View`
+export const Column = styled.View`
   height: 66px;
   justify-content: space-between;
 `;
 
-export const StreamHeader = styled.View`
+export const Header = styled.View`
   flex-direction: row;
   align-items: center;
 `;
 
-export const StreamAvatar = styled.View`
+export const Avatar = styled.View`
   background: ${colors.orange};
   width: 20px;
   height: 20px;
   border-radius: 10px;
 `;
 
-export const StreamUsername = styled.Text`
+export const Username = styled.Text`
   color: ${colors.black};
   margin-left: 5px;
   font-family: roboto_700;
 `;
 
-export const StreamDescription = styled.Text`
+export const Description = styled.Text`
   color: ${colors.black};
 `;
 
-export const StreamCategory = styled.Text`
+export const Category = styled.Text`
   color: ${colors.gray};
   font-family: roboto_500;
 `;

@@ -1,18 +1,18 @@
 import React from 'react';
 import { Alert } from 'react-native';
-import streamThumbnail from '../../images/stream_thumbnail.jpg';
+import ImagemThumbnail from '../../images/stream_thumbnail.jpg';
 
 import {
   List,
-  StreamContainer,
-  StreamRow,
-  StreamThumbnail,
-  StreamColumn,
-  StreamHeader,
-  StreamAvatar,
-  StreamUsername,
-  StreamDescription,
-  StreamCategory,
+  Container,
+  Row,
+  Thumbnail,
+  Column,
+  Header,
+  Avatar,
+  Username,
+  Description,
+  Category,
   TagRow,
   TagView,
   TagText,
@@ -20,24 +20,24 @@ import {
 
 const AcontecendoHoje: React.FC = () => {
   const Item = () => (
-    <StreamContainer onPress={() => Alert.alert('Evento sendo carregado...')}>
-      <StreamThumbnail source={streamThumbnail} />
+    <Container onPress={() => Alert.alert('Evento sendo carregado...')}>
+      <Thumbnail source={ImagemThumbnail} />
 
-      <StreamRow>
-        <StreamColumn>
-          <StreamHeader>
-            <StreamAvatar />
-            <StreamUsername numberOfLines={1}>Live Mb Labs</StreamUsername>
-          </StreamHeader>
+      <Row>
+        <Column>
+          <Header>
+            <Avatar />
+            <Username numberOfLines={1}>Live Mb Labs</Username>
+          </Header>
 
-          <StreamDescription numberOfLines={1}>
+          <Description numberOfLines={1}>
             Desenvolver App frontend
-          </StreamDescription>
+          </Description>
 
-          <StreamCategory numberOfLines={1}>
+          <Category numberOfLines={1}>
             Tecnologia
-          </StreamCategory>
-        </StreamColumn>
+          </Category>
+        </Column>
 
         <TagRow>
           <TagView>
@@ -47,8 +47,8 @@ const AcontecendoHoje: React.FC = () => {
             <TagText>Desenvolvimento Mobile</TagText>
           </TagView>
         </TagRow>
-      </StreamRow>
-    </StreamContainer>
+      </Row>
+    </Container>
   );
 
   return (

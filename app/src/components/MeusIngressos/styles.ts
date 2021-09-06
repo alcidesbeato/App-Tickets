@@ -5,7 +5,7 @@ export const List = styled.View`
   padding: 8px 0 0;
 `;
 
-export const ChannelContainer = styled.TouchableOpacity`
+export const CategoriaContainer = styled.TouchableOpacity`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;

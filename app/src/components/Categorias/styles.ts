@@ -30,7 +30,7 @@ export const CategoryStatus = styled.View`
   align-items: center;
 `;
 
-export const RedCircle = styled.View`
+export const Circle = styled.View`
   background: ${colors.orange};
   width: 9px;
   height: 9px;

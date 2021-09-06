@@ -3,7 +3,7 @@ import { Alert } from 'react-native';
 
 import {
   List,
-  ChannelContainer,
+  CategoriaContainer,
   LeftSide,
   Avatar,
   Column,
@@ -15,7 +15,7 @@ import {
 
 const MeusIngressos: React.FC = () => {
   const Ingresso = () => (
-    <ChannelContainer onPress={() => Alert.alert('Ingresso sendo carregado...')}>
+    <CategoriaContainer onPress={() => Alert.alert('Ingresso sendo carregado...')}>
       <LeftSide>
         <Avatar />
         <Column>
@@ -27,7 +27,7 @@ const MeusIngressos: React.FC = () => {
       <RightSide>
         <WhiteCircle />
       </RightSide>
-    </ChannelContainer>
+    </CategoriaContainer>
   );
 
   return (

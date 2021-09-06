@@ -6,7 +6,7 @@ import {
   CategoryImage,
   CategoryName,
   CategoryStatus,
-  RedCircle,
+  Circle,
   Info,
 } from './styles';
 
@@ -22,7 +22,7 @@ const Categorias: React.FC = () => {
       <CategoryImage source={item.source} />
       <CategoryName numberOfLines={1}>{item.name}</CategoryName>
       <CategoryStatus>
-        <RedCircle />
+        <Circle />
         <Info>06/09 as 16h</Info>
       </CategoryStatus>
     </CategoryContainer>

@@ -127,7 +127,7 @@ const { data, indices } = React.useMemo(() => {
         <Button 
         color='orange'
         title="Buscar"
-        onPress={() => Alert.alert('Buscando em andamento...')}
+        onPress={() => Alert.alert('Busca em andamento...')}
         />
 
          </SafeAreaView>

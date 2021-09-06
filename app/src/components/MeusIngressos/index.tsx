@@ -20,7 +20,7 @@ const MeusIngressos: React.FC = () => {
         <Avatar />
         <Column>
           <Username>Palestra Mb Labs</Username>
-          <Info>07/09/21 as 16h</Info>
+          <Info>06/09/21 as 16h</Info>
         </Column>
       </LeftSide>
 

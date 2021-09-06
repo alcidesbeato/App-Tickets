@@ -18,7 +18,7 @@ interface ItemProps {
 
 const Categorias: React.FC = () => {
   const CategoryItem: React.FC<ItemProps> = ({ item }) => (
-    <CategoryContainer onPress={() => Alert.alert('Categorias sendo carregadas...')} >
+    <CategoryContainer onPress={() => Alert.alert('Categoria sendo carregadas...')} >
       <CategoryImage source={item.source} />
       <CategoryName numberOfLines={1}>{item.name}</CategoryName>
       <CategoryStatus>

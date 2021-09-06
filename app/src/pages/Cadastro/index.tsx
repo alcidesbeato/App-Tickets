@@ -155,8 +155,8 @@ const { data, indices } = React.useMemo(() => {
 
         <Button 
         color='orange'
-        title="Concluir cadastro evento"
-        onPress={() => Alert.alert('Cadastro evento concluido com sucesso')}
+        title="Concluir cadastro usuário"
+        onPress={() => Alert.alert('Cadastro usuário concluido com sucesso')}
         />
 
          </SafeAreaView>

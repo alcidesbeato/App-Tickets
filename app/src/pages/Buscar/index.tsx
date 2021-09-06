@@ -57,7 +57,7 @@ const { data, indices } = React.useMemo(() => {
   
         {
           key: 'Ingressos',
-          render: () => <Titulo>bsuca</Titulo>,
+          render: () => <Titulo>busca</Titulo>,
           isTitle: true,
         },  
       ];

@@ -1,11 +1,8 @@
 import React from 'react';
-import { View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import colors from './styles/colors';
 
 import Inicio from './pages/Inicio';
 import Ingressos from './pages/Ingressos';

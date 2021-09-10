@@ -1,7 +1,5 @@
 import React from 'react';
-import { Alert } from 'react-native';
 import {
-  MaterialIcons,
   MaterialCommunityIcons,
   Feather,
 } from '@expo/vector-icons';

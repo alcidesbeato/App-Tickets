@@ -1,6 +1,6 @@
-import React,{useContext, useEffect} from "react";
+import React from "react";
 import { Wrapper,  Heading, LoadingIcon } from "./styles";
-import {  Alert, Button, Image } from "react-native";
+import {  Button, Image } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
 

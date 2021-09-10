@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, FlatList } from 'react-native';
+import { FlatList } from 'react-native';
 
 import Topo from '../../components/Topo';
 import Cabeçalho from '../../components/Cabeçalho';
